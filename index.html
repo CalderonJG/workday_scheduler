@@ -29,10 +29,39 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+
+    // code for calendar layout (CSS grid?) //
+
+    // Timeblock code here //
+
+
+      <script>
+      var Timeblock = function(occupied, on, element) {
+        this.occupied = occupied;
+        this.on = on;
+        this.room_id = 0;
+        this.element = element;
+
+        var timeblock = this;
+        this.element.click(function() {
+            timeblock.update();
+        });
+      }
+
+      Timeblock.prototype.update = function() {
+        if (!this.occupied) {
+          this.element.addClass('on');
+        }
+      }
+    </script>
+
+// save button for event on calender //
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Luxon javascript -->
+    <script src=""></script>
   </body>
 </html>
