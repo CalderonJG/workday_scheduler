@@ -14,4 +14,4 @@ When you click a time block, you can enter an event.
 
 When you click the "save" button for that time block, that event is saved for local storage.
 
-URL:
+URL: https://github.com/CalderonJG/CalderonJG.github.io/blob/main/workday_scheduler/index.html
